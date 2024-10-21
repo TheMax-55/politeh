@@ -1,5 +1,5 @@
 ﻿using System;
-using System.IO.Compression;
+
 class Program
 {
     static void Main()
