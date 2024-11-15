@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        //Задание 1 Определить локальный минимум
+        //Задание 1 Определить локальный максимум
         Console.Write("Введите количество элементов: ");
         int n1 = Convert.ToInt32(Console.ReadLine()), lokmax = 0, a = 0, alev = 0, aprav = 0;
         Console.WriteLine("Введите элементы: ");
