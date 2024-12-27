@@ -42,7 +42,9 @@ class Math
             Console.WriteLine("На 0 делить нельзя");
         }
     }
+}
 
+class Program { 
     static void Main()
     {
         Math Primer1 = new Math();
