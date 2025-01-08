@@ -2,8 +2,8 @@
 using System.Buffers;
 class Bake
 {
-    public string Temperature;
-    public string Time;
+    public int Temperature;
+    public int Time;
 }
 class Bread : Bake
 {
@@ -29,10 +29,10 @@ class Program
                     Console.Write("Введите название хлеба: ");
                     bread.Name = Console.ReadLine();
                     Console.Write("Введите температуру хлеба: ");
-                    bread.Temperature = Console.ReadLine();
+                    bread.Temperature = int.Parse(Console.ReadLine());
                     Console.Write("Введите продолжительность выпекания хлеба: ");
-                    bread.Time = Console.ReadLine();
-                    arr[j] = [bread.Name, bread.Temperature, bread.Time];
+                    bread.Time = int.Parse(Console.ReadLine());
+                    arr[j] = [bread.Name, bread.Temperature.ToString(), bread.Time.ToString()];
                 }
             }
             if (n == 2)
