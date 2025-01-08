@@ -25,7 +25,7 @@ class Program
             {
                 for (int j = 0; j < 2; j++)
                 {
-                    Bread bread = new Bread { };
+                    Bread bread = new Bread();
                     Console.Write("Введите название хлеба: ");
                     bread.Name = Console.ReadLine();
                     Console.Write("Введите температуру хлеба: ");
