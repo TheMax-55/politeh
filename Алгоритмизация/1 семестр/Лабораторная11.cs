@@ -15,7 +15,6 @@ class Program
     {
         int count = 0;
         string[][] arr = new string[2][];
-        Bread bread = new Bread { };
         for (int i = 0; ; i++)
         {
             Console.WriteLine("1. Заполнить базу данных.");
@@ -26,6 +25,7 @@ class Program
             {
                 for (int j = 0; j < 2; j++)
                 {
+                    Bread bread = new Bread { };
                     Console.Write("Введите название хлеба: ");
                     bread.Name = Console.ReadLine();
                     Console.Write("Введите температуру хлеба: ");
