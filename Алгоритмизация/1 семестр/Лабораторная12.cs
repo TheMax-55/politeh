@@ -26,6 +26,7 @@ class Program
         {
             Console.WriteLine("1. Заполнить базу данных.");
             Console.WriteLine("2. Выборка по среднему баллу 4.5.");
+            Console.WriteLine("3. Выход.");
             int n = int.Parse(Console.ReadLine());
             if (n == 1)
             {
@@ -79,6 +80,10 @@ class Program
                 {
                     Console.WriteLine("Сначала заполните базу данных.");
                 }
+            }
+            if (n == 3)
+            {
+                break;
             }
         }
     }
