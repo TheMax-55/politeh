@@ -20,6 +20,7 @@ class Program
             Console.WriteLine("1. Заполнить базу данных.");
             Console.WriteLine("2. Выборка по длительности.");
             Console.WriteLine("3. Выборка по температуре.");
+            Console.WriteLine("4. Выход.");
             int n = int.Parse(Console.ReadLine());
             if (n == 1)
             {
@@ -79,6 +80,10 @@ class Program
                 {
                     Console.WriteLine("Сначала заполните базу данных.");
                 }
+            }
+            if (n == 4)
+            {
+                break;
             }
         }
     }
