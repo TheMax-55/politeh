@@ -13,10 +13,10 @@ class Program
 {
     static void Main()
     {
-        int count = 0;
         string[][] arr = new string[2][];
         for (int i = 0; ; i++)
         {
+            int count = 0;
             Console.WriteLine("1. Заполнить базу данных.");
             Console.WriteLine("2. Выборка по длительности.");
             Console.WriteLine("3. Выборка по температуре.");
