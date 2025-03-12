@@ -1,78 +1,44 @@
 ﻿using System;
 class Program
 {
-    static bool digitCheck(string number)
-    {
-        int count = 0;
-        bool flag = false;
-        foreach (char x in number)
-        {
-            if (Char.IsDigit(x))
-            {
-                count++;
-            }
-        }
-        if (count == number.Length)
-        {
-            flag = true;
-        }
-        return flag;
-    }
     static void Main()
     {
-        Stack<string> st = new Stack<string>();
-        Console.Write("Введите выражение: ");
-        string[] arr = Console.ReadLine().Split(" ");
-        foreach (string sym in arr)
+        HashSet<string> set = new HashSet<string>();
+        Console.Write("Введите элементы последовательности: ");
+        string[] s = Console.ReadLine().Split(' ');
+        //Задание 1
+        foreach (string sym in s)
         {
-
-            if (digitCheck(sym))
+            set.Add(sym);
+        }
+        Console.Write("Последовательность составлена из данных элементов: ");
+        foreach (string sym in set)
+        {
+            Console.Write($"{sym} ");
+        }
+        //Задание 2
+        int count = 0;
+        string repeated = "";
+        foreach (string currsym in set)
+        {
+            int currcount = 0;
+            foreach (string sym in s)
             {
-                st.Push(sym);
-            }
-            else if (sym == "+" && st.Count >= 2)
-            {
-                int num1 = int.Parse(st.Pop());
-                int num2 = int.Parse(st.Pop());
-                st.Push((num1 + num2).ToString());
-            }
-            else if (sym == "-" && st.Count >= 2)
-            {
-                int num1 = int.Parse(st.Pop());
-                int num2 = int.Parse(st.Pop());
-                st.Push((num2 - num1).ToString());
-            }
-            else if (sym == "*" && st.Count >= 2)
-            {
-                int num1 = int.Parse(st.Pop());
-                int num2 = int.Parse(st.Pop());
-                st.Push((num1 * num2).ToString());
-
-            }
-            else if (sym == "/" && st.Count >= 2)
-            {
-                int num1 = int.Parse(st.Pop());
-                int num2 = int.Parse(st.Pop());
-                if (num1 != 0)
+                if (currsym == sym)
                 {
-                    st.Push((num2 / num1).ToString());
+                    currcount++;
                 }
             }
-            else
+            if (currcount > count)
             {
-                st.Clear();
-                break;
+                count = currcount;
+                repeated = currsym + " ";
             }
-
+            else if (currcount == count)
+            {
+                repeated = repeated + currsym + " ";
+            }
         }
-        if (st.Count == 1)
-        {
-            string answer = st.Pop();
-            Console.WriteLine(answer);
-        }
-        else
-        {
-            Console.WriteLine("Ошибка.");
-        }
+        Console.Write($"\nБольше всего повторялись: {repeated}");
     }
 }
