@@ -29,12 +29,12 @@ class Program
         for (int i = 0; ;i++)
         {
             int count = 0; 
-            Console.WriteLine("1. Добавить пользователя.");
-            Console.WriteLine("2. Выборка по номеру телефона.");
-            Console.WriteLine("3. Выборка по телефонному оператору.");
-            Console.WriteLine("4. Выборка по дате заключения договора.");
-            Console.WriteLine("5. Выборка по городу.");
-            Console.WriteLine("6. Выход.");
+            Console.WriteLine("1. Добавить пользователя.\n"+
+                "2. Выборка по номеру телефона.\n" +
+                "3. Выборка по телефонному оператору.\n" +
+                "4. Выборка по дате заключения договора.\n" +
+                "5. Выборка по городу.\n" +
+                "6. Выход.");
             int n = int.Parse(Console.ReadLine());
             if (n == 1)
             {
@@ -70,11 +70,11 @@ class Program
                         {
                             if (user.PhoneInfo[j][0] == currnumber)
                             {
-                                Console.WriteLine($"ФИО: {user.Name}");
-                                Console.WriteLine($"Номер телефона: {user.PhoneInfo[j][0]}");
-                                Console.WriteLine($"Мобильный оператор: {user.PhoneInfo[j][1]}");
-                                Console.WriteLine($"Год заключения договора: {user.PhoneInfo[j][2]}");
-                                Console.WriteLine($"Город проживания: {user.City}");
+                                Console.WriteLine($"ФИО: {user.Name}\n"+
+                                    $"Номер телефона: {user.PhoneInfo[j][0]}\n"+
+                                    $"Мобильный оператор: {user.PhoneInfo[j][1]}\n"+
+                                    $"Год заключения договора: {user.PhoneInfo[j][2]}\n"+
+                                    $"Город проживания: {user.City}");
                                 count++;
                             }
                         }
@@ -101,11 +101,11 @@ class Program
                         {
                             if (user.PhoneInfo[j][1] == curroperator)
                             {
-                                Console.WriteLine($"ФИО: {user.Name}");
-                                Console.WriteLine($"Номер телефона: {user.PhoneInfo[j][0]}");
-                                Console.WriteLine($"Мобильный оператор: {user.PhoneInfo[j][1]}");
-                                Console.WriteLine($"Год заключения договора: {user.PhoneInfo[j][2]}");
-                                Console.WriteLine($"Город проживания: {user.City}");
+                                Console.WriteLine($"ФИО: {user.Name}\n" +
+                                    $"Номер телефона: {user.PhoneInfo[j][0]}\n" +
+                                    $"Мобильный оператор: {user.PhoneInfo[j][1]}\n" +
+                                    $"Год заключения договора: {user.PhoneInfo[j][2]}\n" +
+                                    $"Город проживания: {user.City}");
                                 count++;
                             }
                         }
@@ -132,11 +132,11 @@ class Program
                         {
                             if (user.PhoneInfo[j][2] == currdate)
                             {
-                                Console.WriteLine($"ФИО: {user.Name}");
-                                Console.WriteLine($"Номер телефона: {user.PhoneInfo[j][0]}");
-                                Console.WriteLine($"Мобильный оператор: {user.PhoneInfo[j][1]}");
-                                Console.WriteLine($"Год заключения договора: {user.PhoneInfo[j][2]}");
-                                Console.WriteLine($"Город проживания: {user.City}");
+                                Console.WriteLine($"ФИО: {user.Name}\n" +
+                                    $"Номер телефона: {user.PhoneInfo[j][0]}\n" +
+                                    $"Мобильный оператор: {user.PhoneInfo[j][1]}\n" +
+                                    $"Год заключения договора: {user.PhoneInfo[j][2]}\n" +
+                                    $"Город проживания: {user.City}");
                                 count++;
                             }
                         }
@@ -164,9 +164,9 @@ class Program
                             Console.WriteLine($"ФИО: {user.Name}");
                             for (int j = 0; j < user.PhoneInfo.Length; j++)
                             {
-                                Console.WriteLine($"Номер телефона: {user.PhoneInfo[j][0]}");
-                                Console.WriteLine($"Мобильный оператор: {user.PhoneInfo[j][1]}");
-                                Console.WriteLine($"Год заключения договора: {user.PhoneInfo[j][2]}");
+                                Console.WriteLine($"Номер телефона: {user.PhoneInfo[j][0]}\n" +
+                                    $"Мобильный оператор: {user.PhoneInfo[j][1]}\n" +
+                                    $"Год заключения договора: {user.PhoneInfo[j][2]}");
                             }
                             Console.WriteLine($"Город проживания: {user.City}");
                             count++;
