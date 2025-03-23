@@ -67,11 +67,13 @@ class Program
         Circle circle = new Circle("Окружность", 1);
         Square square = new Square("Квадрат", 3);
         Triangle triangle = new Triangle("Треугольник", 2);
-        Console.WriteLine($"Площадь окружности: {circle.CalcArea()}");
-        Console.WriteLine($"Периметр окружности: {circle.CalcPerimeter()}");
-        Console.WriteLine($"Площадь квадрата: {square.CalcArea()}");
-        Console.WriteLine($"Периметр квадрата: {square.CalcPerimeter()}");
-        Console.WriteLine($"Площадь треугольника: {triangle.CalcArea()}");
-        Console.WriteLine($"Периметр треугольника: {triangle.CalcPerimeter()}");
+        Console.WriteLine($"Площадь окружности: {circle.CalcArea()}\n" +
+        $"Периметр окружности: {circle.CalcPerimeter()}");
+
+        Console.WriteLine($"Площадь квадрата: {square.CalcArea()}\n" +
+        $"Периметр квадрата: {square.CalcPerimeter()}");
+
+        Console.WriteLine($"Площадь треугольника: {triangle.CalcArea()}\n" +
+        $"Периметр треугольника: {triangle.CalcPerimeter()}");
     }
 }
