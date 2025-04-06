@@ -46,30 +46,30 @@ class Program
     }
     static void Main()
     {
-        double inf = double.PositiveInfinity;
+        double i = double.PositiveInfinity;
         double[,] test1 = {
-            { 0,  10, 18, 8,  inf,inf },
-            { 10, 0,  16, 9,  21, inf },
-            { inf,16, 0,  inf,inf,15 },
-            { 7,  9,  inf,0,  inf,12 },
-            { inf,inf,inf,inf,0,  23 },
-            { inf,inf,15, inf,23, 0 }
+            { 0,10,18,8,i,i },
+            { 10,0,16,9,21,i },
+            { i,16,0,i,i,15 },
+            { 7,9,i,0,i,12 },
+            { i,i,i,i,0,23 },
+            { i,i,15,i,23,0 }
         };
         double[,] test2 =
         {
-            {0, inf, -2, inf },
-            {4, 0, 3, inf },
-            {inf, inf, 0, 2 },
-            {inf, -1, inf, 0}
+            { 0,i,-2,i },
+            { 4,0,3,i },
+            { i,i,0,2 },
+            { i,-1,i,0 }
         };
         double[,] test3 =
         {
-            {0,   10,  18,   8,  inf, inf },
-            {10,   0,  16,   9,  21,  inf },
-            {inf, 16,   0,  inf, inf, 15 },
-            {7,    9,  inf,  0,  inf, 12 },
-            {inf, inf, inf, inf, 0,   23 },
-            {inf, inf, 15,  inf, 23,  0 }
+            { 0,10,18,8,i,i },
+            { 10,0,16,9,21,i },
+            { i,16,0,i,i,15 },
+            { 7,9,i,0,i,12 },
+            { i,i,i,i,0,23 },
+            { i,i,15,i,23,0 }
         };
         Floyd(test1);
         Floyd(test2);
