@@ -30,19 +30,17 @@ class Program
     static void Floyd(double[,] arr)
     {
         int n = arr.GetLength(0);
-        double[,] arr2 = new double[n, n];
         for (int k = 0; k < n; k++)
         {
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
                 {
-                    arr2[i, j] = Math.Min(arr[i, k] + arr[k, j], arr[i, j]);
+                    arr[i, j] = Math.Min(arr[i, k] + arr[k, j], arr[i, j]);
                 }
             }
-            arr = arr2;
         }
-        Print(arr2);
+        Print(arr);
     }
     static void Main()
     {
