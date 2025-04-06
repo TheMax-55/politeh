@@ -27,21 +27,21 @@ class Program
     }
     static void Main()
     {
-        double inf = double.PositiveInfinity;
+        double i = double.PositiveInfinity;
         double[,] test1 = {
-            { inf,   1, inf, inf,  3  },
-            { inf, inf,   8,   7,  1  },
-            { inf, inf, inf,   1,  -5 },
-            { inf, inf,   2, inf, inf },
-            { inf, inf, inf,   4, inf },
+            { i,1,i,i,3 },
+            { i,i,8,7,1 },
+            { i,i,i,1,-5 },
+            { i,i,2,i,i },
+            { i,i,i,4,i },
         };
         double[,] test2 =
         {
-            { inf, 2, inf, 19, 25 },
-            { 2, inf, 6, 14, inf },
-            { 21, 6, inf, 1, 13 },
-            { inf, 6, 1, inf, 2 },
-            { 7, 11, 6, 2, inf }
+            { i,2,i,19,25 },
+            { 2,i,6,14,i },
+            { 21,6,i,1,13 },
+            { i,6,1,i,2 },
+            { 7,11,6,2,i }
         };
         Ford(test1, 0, 4);
         Ford(test1, 2, 1);
