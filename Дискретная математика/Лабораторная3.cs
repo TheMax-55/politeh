@@ -39,8 +39,8 @@ class Program
             while (visitedCount < n)
             {
                 int min = int.MaxValue;
-                int v1 = n + 1;
-                int v2 = n + 1;
+                int v1 = -1;
+                int v2 = -1;
                 for (int i = 0; i < n; i++)
                 {
                     if (inMST[i])
