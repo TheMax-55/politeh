@@ -27,7 +27,7 @@ class Program
         while (visitedCount < n)
         {
             int min = int.MaxValue;
-            int minvert = n+1;
+            int minvert = -1;
             for (int i = 0; i < n; i++)
             {
                 if (visited[i])
