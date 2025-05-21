@@ -86,15 +86,9 @@ class Program
                                     count++;
                                 }
                             }
-                            if (count == 0)
-                            {
-                                Console.WriteLine("Таких книг нет.");
-                            }
+                            if (count == 0) Console.WriteLine("Таких книг нет.");
                         }
-                        else
-                        {
-                            Console.WriteLine("Сначала добавьте книги в базу данных.");
-                        }
+                        else Console.WriteLine("Сначала добавьте книги в базу данных.");
                     }
                     break;
                 case 3:
@@ -112,15 +106,9 @@ class Program
                                     count++;
                                 }
                             }
-                            if (count == 0)
-                            {
-                                Console.WriteLine("Таких книг нет.");
-                            }
+                            if (count == 0) Console.WriteLine("Таких книг нет.");
                         }
-                        else
-                        {
-                            Console.WriteLine("Сначала добавьте книги в базу данных.");
-                        }
+                        else Console.WriteLine("Сначала добавьте книги в базу данных.");
                     }
                     break;
             }
