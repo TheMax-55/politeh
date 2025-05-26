@@ -170,7 +170,7 @@ class Program
                                           {
                                               itemId = item.id,
                                               itemName = item.name,
-                                              itemRevenue = itemOps.Sum(op => op.operation == "Продажа" ? (int)op.amount * (int)op.price : 0)
+                                              itemRevenue = itemOps.Sum(op => op.operation == "Продажа" ? op.amount * op.price : 0)
                                           };
 
                             foreach (var obj in revenue) Console.WriteLine($"Выручка от продаж от товара {obj.itemName} (ID: {obj.itemId}): {obj.itemRevenue}");
