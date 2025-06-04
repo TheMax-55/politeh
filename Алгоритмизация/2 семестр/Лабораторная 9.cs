@@ -1,7 +1,4 @@
-﻿using Microsoft.VisualBasic.FileIO;
-using System;
-using System.Security.Cryptography.X509Certificates;
-using System.Xml.Linq;
+﻿using System;
 class Array<T>
 {
     public T[] array = new T[10];
